@@ -1,3 +1,1 @@
-[![Build Status](https://travis-ci.com/konsloiz/multi-docker-project.svg?branch=main)](https://travis-ci.com/konsloiz/multi-docker-project)
-
-Deployment
+Section 14: A Multi-Container App with Kubernetes
