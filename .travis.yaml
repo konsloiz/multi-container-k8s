@@ -4,7 +4,7 @@ services:
 env:
   global:
     - SHA=$(git rev-parse HEAD)
-    - CLOUDSKD_CORE_DISABLE_PROMPTS=1
+    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
 before_install:
   - openssl aes-256-cbc -K $encrypted_d936d495bd47_key -iv $encrypted_d936d495bd47_iv -in multi-k8s.json.enc -out multi-k8s.json -d
   - curl https://skd.cloud.google.com | bash > /dev/null;
