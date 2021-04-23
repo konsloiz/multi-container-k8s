@@ -20,7 +20,7 @@ before_install:
 script:
   - docker run -e CI=true stephengrider/react-test npm test
 
- deploy: 
+deploy:
   provider: script
   script: bash ./deploy.sh
   on:
