@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+ 
+kind: Certificate
+metadata:
+  name: konsloiz-com-tls
+spec:
+  secretName: konsloiz-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: www.konsloiz.tk
+  dnsNames:
+    - www.konsloiz.tk
